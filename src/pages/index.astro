@@ -9,7 +9,7 @@ import '@fontsource/figtree/600.css';
 import '../styles/global.css';
 import { business, mapHref, services, whatsappHref } from '../data/site';
 
-const base = import.meta.env.BASE_URL;
+const base = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/`;
 const asset = (path: string) => `${base}${path.replace(/^\//, '')}`;
 const mainWhatsApp = whatsappHref();
 const title = 'Elisabete Freire Beauty | Cílios, maquiagem e sobrancelhas em São José dos Campos';
