@@ -41,6 +41,9 @@ const structuredData = {
     <meta property="og:site_name" content={business.name} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
+    <meta property="og:url" content={Astro.url.href} />
+    <meta property="og:image" content={new URL(asset('/images/olhar-brow-lamination.jpg'), Astro.site).href} />
+    <link rel="canonical" href={Astro.url.href} />
     <link rel="icon" type="image/svg+xml" href={asset('/favicon.svg')} />
     <link rel="preload" as="image" href={asset('/images/olhar-brow-lamination.jpg')} />
     <title>{title}</title>
